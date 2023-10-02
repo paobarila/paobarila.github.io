@@ -1,0 +1,336 @@
+  @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;1,400&display=swap');
+*{
+    font-family: "Titillium Web";
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*Seccion de Inicio*/
+.inicio{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url("/assets/imagenes/1618929361-lentes-madera.jpg");
+    background-size: cover;
+    background-position: center center;
+    color:#fff;
+    height: 21rem;
+}
+.inicio .conteiner-seccion{
+max-width: 43rem;
+margin:auto;
+text-align: center;
+padding: 0, 1.5rem;
+}
+.inicio .conteiner-seccion header{
+    padding: 1rem;
+}
+nav{
+   /*display: flex;
+   flex-direction: column;
+   align-items:center;
+   justify-content: start;
+   margin-left: 10px;
+   background-color: blue ;
+   width: min-content;
+   border-radius: 10px;
+   padding:1rem;      con flexbox */ 
+   position: fixed;
+   margin-left: 1rem;
+   background-color:  #89b0aeff;
+   padding: 1.5rem;
+   border-radius: 10px;
+   text-align: left;
+   z-index: 99;
+   display: none;
+}
+.inicio .conteiner-seccion header nav a{
+    display: block;
+    color:#faf9f9ff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.inicio .conteiner-seccion header .nav-bar{
+    position: fixed;
+    background-color:  #89b0aeff;
+    font-size: 20px;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    line-height: 2.25rem;
+    cursor: pointer;
+    transition: .3s;
+}
+.inicio .conteiner-seccion header .nav-bar:hover{
+    box-shadow: 0 0 3rem #faf9f9ff;
+}
+.inicio .conteiner-seccion .info{
+    padding-bottom:3rem;
+    padding-top:3rem;
+}
+.inicio .conteiner-seccion .info h1{
+    font-size: 2.75rem;
+    letter-spacing: 5px;
+}
+.inicio .conteiner-seccion .info h2{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+}
+.inicio .conteiner-seccion .info .rrss{
+    margin: 20px 0;
+}
+.inicio .conteiner-seccion .info .rrss a{
+    display: inline-block;
+    text-decoration: none;
+    background-color:#89b0aeff;
+    color: #ffff;
+    border: 1px solid #555b6eff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+    transition: .3s;
+}
+.inicio .conteiner-seccion .info .rrss a:hover{
+    color:#faf9f9ff;
+    background-color:#ffd6baff;
+    box-shadow: 0 0 20px #fff;
+}
+
+.inicio .conteiner-seccion .foto{
+    position: relative;
+}
+.inicio .conteiner-seccion .foto img{
+    max-width: 11rem;
+    border-radius: 50%;
+    border: 5px solid #89b0aeff;
+    position: absolute;
+    left: 50%;
+    top: -2.5rem;
+    transform: translateX(-50%);
+}
+
+.sobremi{
+    background-color: #faf3dd;
+    padding: 8rem 0 10rem 0;
+    text-align: center;
+}
+.sobremi .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.sobremi .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.sobremi .contenido-seccion .especial{
+    color: #555b6eff;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.sobremi .contenido-seccion p{
+    max-width: 44rem;
+    margin: auto;
+    color: #666;
+}
+.sobremi .contenido-seccion .fila{
+    display: flex;
+    margin-top: 30px;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.sobremi .contenido-seccion .fila .col{
+    width: 30%;
+}
+.sobremi .contenido-seccion .fila .col i{
+    color:#555b6eff;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid  #89b0aeff;
+    line-height: 40px;
+    border-radius: 50%;
+}
+.sobremi .contenido-seccion .fila .col span{
+    display: block;
+    font-weight: bold;
+    margin: 8px 0;
+}
+.habilidades{
+    padding: 80px 0 100px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url("/assets/imagenes/compu-cafe-blanco.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #fff;
+}
+.habilidades .contenido-seccion{
+    max-width: 63rem;
+    margin: auto;
+    padding: 0 1rem;
+}
+.habilidades .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.habilidades .contenido-seccion .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.habilidades .contenido-seccion .fila .col{
+    width: 47%;
+    text-align: left;
+}
+.habilidades .contenido-seccion .fila .col .cont-barra{
+    display: flex;
+    align-items: center;
+}
+.habilidades .contenido-seccion .barra{
+    display: flex;
+    border: 1.8px solid #ffd6baff;
+    padding: 2px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.habilidades .contenido-seccion .barra .e{
+    background-color: #363636;
+    width: 1.25rem;
+    height: 2rem;
+    margin-right: .3rem;
+}
+.resumen{
+    background-color:#faf3dd ;
+    padding: 6rem 0 8rem 0;
+    text-align: center;
+}
+.resumen .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px 0;
+}
+.resumen .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 3.5rem;
+}
+.resumen .contenido-seccion .info{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.resumen .contenido-seccion .info .col{
+    width: 45%;
+}
+.resumen .contenido-seccion .info .col .titulo{
+    display: inline-block;
+    color:#555b6eff ;
+    font-weight: bold;
+    font-size:17px;
+    border: 2px solid #89b0aeff;
+    padding: .75rem;
+    margin-left: 1rem;
+
+}
+
+.resumen .contenido-seccion .info .col table{
+    margin-top: 30px;
+    border-collapse: collapse;
+    margin-left: 1rem;
+}
+.resumen .contenido-seccion .info .col table .datos{
+    width: 40%;
+    border-bottom: 1px solid #bab9b9;
+}
+.resumen .contenido-seccion .info .col table h4{
+    margin-top: 10px;
+}
+.resumen .contenido-seccion .info .col table h3{
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.resumen .contenido-seccion .info .col table p{
+    font-size: 14px;
+    font-weight: bold;
+}
+.resumen .contenido-seccion .info .col table .descripcion{
+    border-left: 1px solid #bab9b9;
+    padding-left: 3rem;
+    padding-right: 1rem;
+    font-size: 14px;
+}
+.contacto{
+    background-color: #555b6eff;
+    padding: 140px 0 100px 0;
+    color: #e6e6e6;
+    text-align: center;
+}
+.contacto .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.contacto .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.contacto .contenido-seccion .fila{
+    display: flex;
+    justify-content: space-around;
+}
+.contacto .contenido-seccion .fila .col{
+    margin-top: 50px;
+}
+.contacto .contenido-seccion .fila .col h2{
+    color:#ffd6baff;
+}
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:800px){
+    .habilidades .contenido-seccion .fila{
+        display: block;
+    }
+    .habilidades .contenido-seccion .fila .col{
+        width: 100%;
+        text-align: center;
+    }
+    .habilidades .contenido-seccion .fila .col .cont-barra{
+        justify-content: center;
+    }
+    .sobremi .contenido-seccion .fila{
+        display: block;
+    }
+    .sobremi .contenido-seccion .fila .col{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .resumen .contenido-seccion .info{
+        display: block;
+    }
+    .resumen .contenido-seccion .info .col{
+        width: 90%;
+        margin: auto;
+    }
+    .resumen .contenido-seccion .info .col .titulo{
+        display: block;
+        text-align: center;
+    }
+    .resumen .contenido-seccion .info .col table{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .contacto .contenido-seccion .fila{
+        display: block;
+    }
+}
